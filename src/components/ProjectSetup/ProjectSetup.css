@@ -1,0 +1,40 @@
+.project-setup-outerdiv{
+    padding: 20px;
+}
+
+.projectName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 50%;
+}
+.projectName p {
+    width:40%
+}
+.projectName input[type="text"] {
+    height: 25px;
+    width: 57%;
+}
+
+.project-setup {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-setup-label{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.project-setup-label p {
+    width: 40%;
+}
+
+.dropbox-project{
+    margin-left: 20px;
+    width: 60%;
+}

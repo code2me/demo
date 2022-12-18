@@ -1,25 +1,26 @@
-import Login from './components/Login/Login';
 import Dashboard from './components/Dashboard/Dashboard';
-import AssignProject from './components/AssignProject';
-import Project from './components/Project';
-import Chart from './components/Chart';
+import ProjectSetup from './components/ProjectSetup/ProjectSetup';
+
 
 import './App.css';
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  
+import useToken from './Hooks/useToken';
 
 const App = () => {
+  const { token, setToken } = useToken();
+
+  // if (!token) {
+  //   return <Login setToken={setToken} />
+  // }
+
   return (
       <Router>
       <div className="wrapper">
-        <h1>Application</h1>
         <Routes>
-          <Route path='/' element={<Login />} />
+          {/* <Route path='/' element={<Login />} /> */}
           <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/assignproject' element={<AssignProject />} />
-          <Route path='/project' element={<Project />} />
-          <Route path='/chart' element={<Chart />} />
+          <Route path='/projectsetup' element={<ProjectSetup />} />
+
         </Routes>
       </div>
       </Router>

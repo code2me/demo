@@ -1,8 +1,12 @@
-import React from 'react'
+import Navbar from "../Navbar/Navbar"
+import Chart from "../Chart"
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div>
+      <Navbar />
+      <Chart />
+    </div>
   )
 }
 
