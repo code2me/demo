@@ -1,5 +1,5 @@
-import Login from './components/Login';
-import Dashboard from './components/Dashboard';
+import Login from './components/Login/Login';
+import Dashboard from './components/Dashboard/Dashboard';
 import AssignProject from './components/AssignProject';
 import Project from './components/Project';
 import Chart from './components/Chart';
@@ -9,7 +9,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
-function App() {
+const App = () => {
   return (
       <Router>
       <div className="wrapper">
